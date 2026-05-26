@@ -73,6 +73,8 @@
 //     console.log(a)
 //   }
 // }
+
+// random()()
 // //
 // function randomm()  {
 //   let a = 12;
@@ -99,3 +101,109 @@
 //   console.log("Hello")
 // }
 // abcd()
+
+// Practice
+// 1. 
+// let func = () => {
+//   console.log("Hello")
+// } 
+// func()
+
+// let multiply = (a, b) => {
+//   return a*b
+// }
+
+//2.
+// function random(...val) {
+//   let total = 0
+//   val.forEach(function(val) {
+//     total = total+val
+//   })
+//   return total
+// }
+// console.log(random(1,2,3,4,5,6))
+
+//3.
+// function checkAge(age) {
+//   if(age < 18)  return "Too Young"
+//   return "Allowed"
+// }
+
+///4.
+// (function() {
+//   console.log("Initialized")
+// })
+// ()
+
+// bmi calculator
+// let func = (weight, height) => {
+//   return weight/ (height*height)
+// }
+// console.log(func(68,1.7).toFixed(2))
+
+// Reusable discount calculator
+// function discountCalculator(discount) {
+//   return function (price) {
+//     return price - price*(discount/100)
+//   }
+// }
+
+// let discounter = discountCalculator(10)
+// console.log(discounter(100)) 
+
+// IIFE problem
+// (function() {
+//   let password = "secret" 
+//   console.log(password)
+// }) ()
+// console.log(password) //not possible
+
+
+//ARRAY -->
+//forEach
+// let arr = [1,2,3,4,5]
+// arr.forEach(function (val) {
+//   console.log(val)
+// })
+
+//map 
+// let arrr= arr.map(function(val) {
+//   return 12
+// }) //ek array theke new array
+// console.log(arrr)
+
+//filter
+// let newarr = arr.filter(function (val) {
+//   if(val>3) return true
+// })
+// console.log(newarr)
+
+//reduce 
+// let ans = arr.reduce(function(accumulator, val) {
+//   return accumulator + val
+// }, 0)
+// console.log(ans) 
+
+//find
+// let ans = arr.find(function (val) {
+//   return val == 1
+// })
+// console.log(ans)
+
+//some 
+// let ans = arr.some(function (val) {
+//   return val > 85
+// })
+
+//some
+// let ans = arr.every(function (val) {
+//   return val > 0
+// })
+
+//destructuring
+// let arr = [1,2,3,4,5]
+// let [a, b, ,f] = arr
+
+//spread operator
+// let arr = [1,2,3,4,5,6,7,8,9,0]
+// let arr2 = [...arr]
