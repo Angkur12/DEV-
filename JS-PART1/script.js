@@ -85,6 +85,17 @@
 // }
 
 // IIFE 
-(function(){
-  console.log("Hello")
-}) ()
+// (function(){
+//   console.log("Hello")
+// }) ()// function call
+  
+//Hoisting differences between declaration and expression
+// word() //Hoisting
+// function word() {
+//   console.log("Hello")
+// }
+
+// let abcd = function ()  {
+//   console.log("Hello")
+// }
+// abcd()
