@@ -65,5 +65,6 @@
 // let p = document.querySelector("p")
 // p.style.fontSize = "18px"
 ////////////////////////////////////////////////////
-//  event handing 
+
+//Event handing 
 
