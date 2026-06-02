@@ -67,4 +67,63 @@
 ////////////////////////////////////////////////////
 
 //Event handing 
+// let h1 = document.querySelector("h1")
+// h1.addEventListener("click", function () {
+//   h1.style.color = "red"
+// })
 
+// let p = document.querySelector("p")
+// function dblclick() {
+//   p.style.color = "red"
+// }
+// p.addEventListener("dblclick",  dblclick)
+// p.removeEventListener("dblclick", dblclick )
+
+// let inp = document.querySelector("input") 
+// inp.addEventListener("input", function (dets) {
+//   if(dets.data !== null) {
+//   console.log(dets.data)
+//   }
+// })
+
+//
+// let selEl = document.querySelector("select")
+// let device = document.querySelector("#device")
+// selEl.addEventListener("change", function (dets) {
+//   // console.log(dets.target.value)
+//   device.textContent = `${dets.target.value} device selected `
+// })
+// awsome things
+// let h1 = document.querySelector("h1")
+
+// window.addEventListener("keydown", function(dets) {
+//   console.log(dets)
+//   if(dets.key === " ") {
+//     h1.textContent = "space"
+//   } else {
+//   h1.textContent = dets.key
+//   }
+// })
+
+// let btn = document.querySelector("#btn") 
+// let fileInp = document.querySelector("#fileInp")
+// btn.addEventListener("click", function () {
+//   fileInp.click()
+// })
+// fileInp.addEventListener("change", function (dets) {
+//   const file = dets.target.files[0]
+//   if(file) {
+//   btn.textContent = file.name
+//   }
+// })
+
+//new
+let form = document.querySelector("form")
+let inputs = document.querySelectorAll("input")
+
+form.addEventListener("submit", function (dets) {
+  dets.preventDefault()
+  console.log(inputs
+    
+  )
+})
