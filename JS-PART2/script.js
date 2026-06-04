@@ -118,12 +118,37 @@
 // })
 
 //new
-let form = document.querySelector("form")
-let inputs = document.querySelectorAll("input")
+// let form = document.querySelector("form")
+// let inputs = document.querySelectorAll("input")
 
-form.addEventListener("submit", function (dets) {
-  dets.preventDefault()
-  console.log(inputs
+// form.addEventListener("submit", function (dets) {
+//   dets.preventDefault()
+//   console.log(inputs
     
-  )
-})
+//   )
+// })
+
+//new
+
+//new
+// let abcd = document.querySelector("#abcd")
+
+// abcd.addEventListener("mouseover", function () {
+//   abcd.style.backgroundColor = "yellow"
+// })
+// abcd.addEventListener("mouseout", function () {
+//   abcd.style.backgroundColor = "red" 
+// })
+
+//new
+// window.addEventListener("mousemove", function (dets) {
+//   console.log(dets)
+// })
+
+//event bubbling
+// document.querySelector("#nav").addEventListener("click",function () {
+//   alert("clicked")
+// })
+
+//event capturing
+
