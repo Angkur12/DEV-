@@ -6,6 +6,8 @@ export let cart = [{
   quantity : 1
 },]
 
+
+
 export function addToCart(productId) {
     let matchingItem;
     cart.forEach((cartItem) => {
