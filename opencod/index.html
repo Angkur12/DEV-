@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StayEase - Hotel Management & Booking</title>
+  <meta name="description" content="StayEase hotel management landing page - book rooms, explore amenities, and experience smart hospitality." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo">Stay<span>Ease</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#management">Management</a></li>
+        <li><a href="#contact" class="btn btn-small">Book Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">★ Rated 4.9 — Smart Hotel Management</p>
+          <h1>Luxury Stay,<br />Effortless Management.</h1>
+          <p class="subtitle">Book premium rooms in seconds. Our all-in-one hotel system handles reservations, housekeeping, billing and guest experience.</p>
+          <div class="hero-actions">
+            <a href="#rooms" class="btn">Explore Rooms</a>
+            <a href="#management" class="btn btn-outline">View Dashboard</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong data-count="120">0</strong><span>Rooms & Suites</span></div>
+            <div><strong data-count="15">0</strong><span>Years of Service</span></div>
+            <div><strong data-count="98">0</strong><span>% Happy Guests</span></div>
+          </div>
+        </div>
+
+        <!-- BOOKING CARD -->
+        <div class="booking-card">
+          <h3>Check Availability</h3>
+          <form id="bookingForm">
+            <label>Check-in
+              <input type="date" id="checkin" required />
+            </label>
+            <label>Check-out
+              <input type="date" id="checkout" required />
+            </label>
+            <label>Guests
+              <select id="guests">
+                <option>1 Guest</option>
+                <option selected>2 Guests</option>
+                <option>3 Guests</option>
+                <option>4+ Guests</option>
+              </select>
+            </label>
+            <label>Room Type
+              <select id="roomType">
+                <option>Deluxe Room</option>
+                <option>Executive Suite</option>
+                <option>Family Room</option>
+                <option>Presidential Suite</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-full">Check Availability</button>
+            <p class="form-msg" id="formMsg"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section class="section container" id="rooms">
+      <h2>Our Rooms & Suites</h2>
+      <p class="section-sub">Filter by category. Live availability powered by our management system.</p>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+        <button class="filter-btn" data-filter="suite">Suite</button>
+        <button class="filter-btn" data-filter="family">Family</button>
+      </div>
+      <div class="room-grid" id="roomGrid">
+        <article class="room-card" data-category="deluxe">
+          <div class="room-img">Deluxe</div>
+          <div class="room-body">
+            <h3>Deluxe King Room</h3>
+            <p>35m² • King Bed • City View • Free WiFi</p>
+            <div class="room-foot"><span class="price">$129<small>/night</small></span><button class="btn btn-small book-btn" data-room="Deluxe King Room">Book</button></div>
+          </div>
+        </article>
+        <article class="room-card" data-category="suite">
+          <div class="room-img alt">Suite</div>
+          <div class="room-body">
+            <h3>Executive Suite</h3>
+            <p>58m² • Lounge Access • Jacuzzi • Breakfast</p>
+            <div class="room-foot"><span class="price">$249<small>/night</small></span><button class="btn btn-small book-btn" data-room="Executive Suite">Book</button></div>
+          </div>
+        </article>
+        <article class="room-card" data-category="family">
+          <div class="room-img alt2">Family</div>
+          <div class="room-body">
+            <h3>Family Comfort Room</h3>
+            <p>48m² • 2 Beds • Kids Area • Kitchenette</p>
+            <div class="room-foot"><span class="price">$189<small>/night</small></span><button class="btn btn-small book-btn" data-room="Family Comfort Room">Book</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section light" id="services">
+      <div class="container">
+        <h2>Services & Amenities</h2>
+        <p class="section-sub">Everything managed in one place.</p>
+        <div class="service-grid">
+          <div class="service-card"><h3>🍽️ Restaurant</h3><p>Multi-cuisine dining, room service 24/7, automated billing.</p></div>
+          <div class="service-card"><h3>🏊 Pool & Spa</h3><p>Slot booking for pool, gym and spa treatments.</p></div>
+          <div class="service-card"><h3>🧹 Housekeeping</h3><p>One-tap requests with live staff tracking.</p></div>
+          <div class="service-card"><h3>💼 Conference</h3><p>Halls, events and invoicing for corporate clients.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANAGEMENT -->
+    <section class="section container" id="management">
+      <h2>Hotel Management Dashboard</h2>
+      <p class="section-sub">Built for staff, loved by guests.</p>
+      <div class="mgmt-grid">
+        <ul class="mgmt-list">
+          <li><strong>✔ Reservations</strong> — real-time calendar, no overbooking</li>
+          <li><strong>✔ Front Desk</strong> — check-in / check-out in 30 seconds</li>
+          <li><strong>✔ Billing</strong> — auto invoices, payments & reports</li>
+          <li><strong>✔ Analytics</strong> — occupancy, revenue, guest feedback</li>
+        </ul>
+        <div class="dashboard-mock">
+          <div class="mock-header"><span></span><span></span><span></span></div>
+          <p>Today's Occupancy</p>
+          <div class="bar"><div class="bar-fill" id="occupancyBar" style="width:0%">0%</div></div>
+          <div class="mock-stats">
+            <div><strong>86</strong><span>Checked-in</span></div>
+            <div><strong>24</strong><span>Arrivals</span></div>
+            <div><strong>$12.4k</strong><span>Revenue</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section light" id="reviews">
+      <div class="container">
+        <h2>Guest Reviews</h2>
+        <div class="testimonial">
+          <p id="reviewText">"Amazing stay! Check-in was instant and the room was spotless."</p>
+          <strong id="reviewAuthor">— Sarah M.</strong>
+          <div class="testimonial-controls">
+            <button id="prevReview">‹</button>
+            <button id="nextReview">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+      <h2>Book Your Stay</h2>
+      <p class="section-sub">Leave your details and our team will confirm within 10 minutes.</p>
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <textarea id="message" rows="4" placeholder="Special requests (late check-in, airport pickup...)"></textarea>
+        <button type="submit" class="btn">Confirm Booking Request</button>
+        <p class="form-msg" id="contactMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>StayEase</h3><p>Smart hotel management & booking experience.</p></div>
+      <div><h4>Links</h4><a href="#rooms">Rooms</a><a href="#services">Services</a><a href="#management">Dashboard</a></div>
+      <div><h4>Contact</h4><p>hello@stayease.com<br />+1 (555) 123-4567</p></div>
+    </div>
+    <p class="copyright">© <span id="year"></span> StayEase. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
